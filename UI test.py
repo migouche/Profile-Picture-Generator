@@ -1,7 +1,7 @@
 from pygamemig import *
 import os
 
-window = Window(800, 600)
+window = Window(944, 944)
 bodyIdx = 0
 hairIdx = 0
 
@@ -11,13 +11,13 @@ hairPath = "img/hair/"
 #pic = Object("img/faces/" + os.listdir("img/faces")[img_idx], Vector2(200, 200))
 #pic.transform.setPos(Vector2(window.width / 2, window.height / 2))
 
-bodyPic = Object(bodyPath + os.listdir(bodyPath)[0], Vector2(200, 200))
+bodyPic = Object(bodyPath + os.listdir(bodyPath)[0], Vector2(800, 800))
 bodyPic.transform.setPos((Vector2(window.width / 2, window.height / 2)))
 
-hairPic = Object(hairPath + os.listdir(hairPath)[0], Vector2(200, 200))
+hairPic = Object(hairPath + os.listdir(hairPath)[0], Vector2(800, 800))
 hairPic.transform.setPos(Vector2(window.width / 2, window.height / 2))
 
-frame = Object("img/marco.png", Vector2(236, 236))
+frame = Object("img/marco.png", Vector2(944, 944))
 frame.transform.setPos(Vector2(window.width / 2, window.height / 2))
 
 while window.running:
