@@ -35,7 +35,10 @@ def Export():  # RGBA
                 pixels[x, y] = body.getpixel((x, y))
             else:  # place hair's pixel
                 pixels[x, y] = hair.getpixel((x, y))
-    result.save("results/test.png")
+    #result.resize((1100, 1100))
+    result.save("results/unscaled result.png")
+    result.resize((1100, 1100), resample=Image.BOX).save("results/upscaled result.png")
+
 
 
 while window.running:
