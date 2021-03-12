@@ -27,6 +27,6 @@ python3 "UI test.py"
 ```
 
 ## Usage
-Use right and left arrows to cycle through the different shirt colours and A and D to cycle throught the hairstyles
+Use right and left arrows to cycle through the different shirt colours and *A* and *D* to cycle throught the hairstyles. Thenn pres *Space* to save an original 11x11 copy and a resized 1100x1100 copy
 
 ## Customization
